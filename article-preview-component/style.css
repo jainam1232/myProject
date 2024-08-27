@@ -1,0 +1,240 @@
+/* Common Styling Starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: var(--LightGrayishBlue);
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Common Styling Ends */
+
+/* Define color variables */
+:root {
+  --DarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+/* Main Container Styles */
+.main-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 730px;
+  height: 280px;
+  margin: 14% auto;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+
+}
+
+/* Left Container Styles */
+.main-container__left {
+  height: 280px;
+  width: 40%;
+}
+
+.main-container__left img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Right Container Styles */
+.main-container__right {
+  padding: 32px 40px;
+  width: 60%;
+}
+
+.main-container__right h3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  width: 365px;
+  color: var(--DarkGrayishBlue);
+}
+
+.main-container__right p {
+  color: var(--GrayishBlue);
+  width: 365px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  margin-top: 12px;
+}
+
+/* Author Section Styles */
+.main-container__right .main-container__author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.main-container__author-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-container__author-info img {
+  border-radius: 50%;
+  max-width: 40px;
+}
+.main-container__info-name__date {
+  display: flex;
+  flex-direction: column;
+  width: 116px;
+  margin-left: 5px;
+}
+
+.main-container__info-name__date .info__name {
+  color: var(--DarkGrayishBlue);
+  font-weight: 600;
+}
+
+.main-container__info-name__date .info__date {
+  color: var(--GrayishBlue);
+}
+
+/* Share Icon Styles */
+.main-container__share-img {
+  background-color: var(--LightGrayishBlue);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.main-container__share-icon {
+  width: 241px;
+  height: 6px;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 219px;
+  bottom: 60px;
+  padding: 24px 46.4px;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.5);
+  text-transform: uppercase;
+}
+
+.main-container__share-icon>* {
+  margin-right: 12.8px;
+}
+
+.main-container__share-icon::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  content: "";
+  position: absolute;
+  right: 105px;
+  top: 48px;
+}
+
+.main-container__share-icon span {
+  font-size: 12.8px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: hsl(212, 23%, 69%);
+}
+
+/* Hidden Share Icon */
+.share-icon__hidden {
+  display: none;
+}
+
+/* Media Query for Tablet and Mobile */
+@media screen and (max-width:768px) {
+
+
+  .main-container {
+    width: 327px;
+    margin: 10% auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-container__left {
+    width: 100%;
+  }
+
+  .main-container__left img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .main-container__right {
+    width: 327px;
+  }
+
+  .main-container__right h3 {
+    width: 263px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+
+  .main-container__right p {
+    width: 263px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+  }
+
+  .main-container__right .main-container__author {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+  }
+
+  .main-container__share-img {
+    z-index: 1;
+    margin-top: 20px;
+    position: relative;
+    top: 11px;
+  }
+
+  .main-container__share-icon {
+    width: 132%;
+    height: 70px;    
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
+    position: absolute;
+    left: -39px;
+    bottom: -22px;
+    top: 31px;
+    gap: 5px;
+    padding: 22px 56px 22px 32px;
+  }
+
+  .share-icon__hidden {
+    display: none;
+  }
+
+  .main-container__share-icon:before {
+    display: none;
+  }
+
+}

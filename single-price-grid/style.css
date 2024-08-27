@@ -1,0 +1,362 @@
+/* Also for styling and some colors values you can refer FIG file */
+
+/* Common Styling Start */
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Wrapper for content */
+.container__wrapper {
+    width: 42%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+
+}
+/* Common Styling Ends */
+
+
+
+/* Description section styling */
+.container__description {
+    padding-left: 40px;
+    width: 100%;
+}
+
+.container__description .description__title {
+    color: #2AB3B1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+.container__description .description__subtitle {
+    color: #C0DF33;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    padding-top: 24px;
+}
+
+.container__description .description__text {
+    /*  you can refer the color from style guide */
+    color: #9AA7BE;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    padding-top: 11px;
+}
+
+/* Subscription and "Why Us" section styling */
+.container__bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+    height: 67%;
+}
+
+ .bottom__item--subscription {
+    padding-left: 40px;
+    background-color: #2AB3B1;
+    width: 50%;
+    height: 100%;
+    padding-top: 47px;
+}
+
+ .bottom__item--subscription .description__title {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin-bottom: 15px;
+}
+
+ .bottom__item--subscription .description__subtitle {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.bottom__item--subscription .item__title{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin-bottom: 15px;
+}
+
+ .bottom__item--subscription .item__price {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+ .bottom__item--subscription .item__price span {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    padding-left: 11px;
+    opacity: 0.5;
+}
+
+ .bottom__item--subscription .item__savings {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    padding-top: 9px;
+}
+
+ .bottom__item--subscription .item__button {
+    border-radius: 5px;
+    border-style: none;
+    background: #C0DF33;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    text-align: center;
+    /* width:70%; */
+    width: 237px;
+    height: 48px;
+    padding: 15px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 26px;
+}
+
+ .bottom__item--why-us {
+    padding-left: 45px;
+    background-color: #4abfbd;
+    width: 50%;
+    height: 100%;
+    padding-top: 37px;
+}
+
+ .bottom__item--why-us h3 {
+    margin-top: 10px;
+    color: #FFF;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+}
+
+ .bottom__item--why-us .item__list {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: -0.175px;
+    padding-top: 18px;
+    opacity: 0.75;
+}
+
+
+/* Media Query for Tablet Responsive */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .container__wrapper {
+        width: 70%;
+        padding-bottom: 0px;
+    }
+
+    .container__bottom {
+        margin-top: 40px;
+    }
+
+    .container__description {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .container__description .description__title {
+        font-size: 24px;
+    }
+
+    .container__description .description__subtitle {
+        font-size: 18px;
+        padding-top: 24px;
+    }
+
+    .container__description .description__text {
+        font-size: 16px;
+        padding-top: 11px;
+    }
+
+     .bottom__item--subscription {
+        padding: 40px;
+    }
+
+     .bottom__item--why-us {
+        padding-bottom: 24px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 32px;
+    }
+
+     .bottom__item--subscription .item__title,
+     .bottom__item--subscription .item__savings,
+     .bottom__item--subscription .item__price span,
+     .bottom__item--why-us .item__title ,
+     .bottom__item--why-us .item__list {
+        font-size: 16px;
+    }
+
+     .bottom__item--subscription .item__price {
+        font-size: 32px;
+    }
+
+     .bottom__item--subscription .item__button {
+        width: 70%;
+        margin-top: 26px;
+    }
+}
+
+
+/* Media Query for Mobile Responsive */
+
+@media screen and (max-width: 650px) {
+
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-color: hsl(204, 43%, 93%);
+        align-items: center;
+        padding: 15px;
+    }
+
+    .container__wrapper {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    }
+
+    .container__bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .container__description {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    
+
+    .container__description .description__title {
+        color: #2AB3B1;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .container__description .description__subtitle {
+        color: #C0DF33;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .container__description .description__text {
+        color: #9AA7BE;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 6px;
+    }
+
+     .bottom__item--subscription {
+        width: 100%;
+        padding: 20px;
+    }
+
+     .bottom__item--subscription .item__price {
+        font-size: 32px;
+        line-height: 24px;
+    }
+
+     .bottom__item--subscription .item__button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+     .bottom__item--why-us {
+        width: 100%;
+        padding: 20px;
+        height: 80%;
+
+    }
+
+     .bottom__item--subscription .item__title,
+     .bottom__item--subscription .item__savings,
+     .bottom__item--subscription .item__price span,
+     .bottom__item--why-us .item__savings,
+     .bottom__item--why-us .item__price
+     .bottom__item--subscription .item__list {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}

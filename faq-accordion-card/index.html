@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- import CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>FAQ Accordion Card</title>
+  </head>
+
+  <body>
+    <main class="faq">
+        <!-- main container -->
+        <div class="faq__container">
+
+            <!-- image part left -->
+            <div class="faq__image">
+
+                <!-- background image -->
+                <picture class="faq__bg-image">
+                  <source 
+                    media="(min-width: 940px)"
+                    srcset="./images/bg-pattern-desktop.svg"
+                  />
+                  <img src="./images/bg-pattern-mobile.svg" alt="background-image" />
+                </picture>                        
+
+                <!-- women image -->
+                <picture class="faq__women-image">
+                  <source 
+                    media="(min-width: 50px)"
+                    srcset="./images/illustration-woman-online-desktop.svg"
+                  />
+                  <img src="./images/illustration-woman-online-mobile.svg" alt="women-image" class="faq__women-image--mobile" />
+                </picture>
+            </div>
+
+            <!-- box image -->
+            <div class="faq__box">
+              <img src="./images/illustration-box-desktop.svg" alt="box-image" />
+            </div>
+        </div>
+
+        <div class="faq__content">
+            <h1 class="faq__title">faq</h1>
+
+            <!-- question 1 starts -->
+            <div class="faq__question" id="question-1">
+                <div class="faq__title-block">
+                    <input type="radio" name="title" id="title-1" />
+                    <label for="title-1"
+                      >How many team members can I invite?
+                      <span><img src="./images/icon-arrow-down.svg" alt="down-arrow" /></span>
+                    </label>
+                    <p>
+                      You can invite up to 2 additional users on the Free plan. There is
+                      no limit on team members for the Premium plan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 2 starts -->
+            <div class="faq__question" id="question-2">
+                <div class="faq__title-block">
+                    <input type="radio" name="title" id="title-2" checked />
+                    <label for="title-2">
+                      What is the maximum file upload size?
+                      <span><img src="./images/icon-arrow-down.svg" alt="down-arrow" /></span>
+                    </label>
+                    <p class="expand">
+                      No more than 2GB. All files in your account must fit your allotted
+                      storage space.
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 3 starts -->
+            <div class="faq__question" id="question-3">
+                <div class="faq__title-block">
+                    <input type="radio" name="title" id="title-3" />
+                    <label for="title-3"
+                      >How do I reset my password?
+                      <span><img src="./images/icon-arrow-down.svg" alt="down-arrow" /></span>
+                    </label>
+                    <p>
+                      Click “Forgot password” from the login page or “Change password”
+                      from your profile page. A reset link will be emailed to you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 4 starts -->
+            <div class="faq__question" id="question-4">
+                <div class="faq__title-block">
+                    <input type="radio" name="title" id="title-4" />
+                    <label for="title-4"
+                      >Can I cancel my subscription?
+                      <span><img src="./images/icon-arrow-down.svg" alt="down-arrow" /></span>
+                    </label>
+                    <p>
+                      Yes! Send us a message and we’ll process your request no questions
+                      asked.
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 5 starts -->
+            <div class="faq__question" id="question-5">
+                <div class="faq__title-block">
+                    <input type="radio" name="title" id="title-5" />
+                    <label for="title-5"
+                      >Do you provide additional support?
+                      <span><img src="./images/icon-arrow-down.svg" alt="" /></span>
+                    </label>
+                    <p>
+                      Chat and email support is available 24/7. Phone lines are open
+                      during normal business hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

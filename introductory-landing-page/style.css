@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* Also for styling and some colors values you can refer FIG file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+.wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 2rem;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 40px;
+    padding-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 41px;
+    margin-left: -35px
+}
+
+.main-text h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    width: 400px
+}
+
+ 
+.main-text p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    width: 500px;
+}
+
+.main-text a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    padding: 13px 50px;
+    color: hsl(257, 40%, 49%);
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.main-text a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-media a i {
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+
+.social-media a:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.social-media a i::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: -15px;
+    bottom: -13px;
+}
+
+.social-media a:nth-child(2) {
+    margin-left: 2.4rem;
+}
+
+.social-media a:hover i {
+    color: hsl(300, 69%, 71%);
+}
+
+.social-media i:hover::after {
+    border-color: hsl(300, 69%, 71%);
+}
+
+/* Media Query :- Css styling screens with a maximum width of 767 pixels  */
+
+@media only screen and (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 28px;
+        padding-top: 30px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .logo img {
+        width: 115px;
+        height: 45px;
+        padding-bottom: 5px;
+    }
+    .main-img img {
+        padding: 0;
+        padding-right: 9px;
+        height: 209px;
+        width: 296px;
+    }
+    .main-text h1 {
+        line-height: 30px;
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 284px;
+        padding-top: 5px;
+    }
+    .main-text {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .main-text p {
+        line-height: 22px;
+        width: 307px;
+        font-size: 14.5px;
+        padding-bottom: 10px;
+    }
+    .social-media {
+        text-align: center;
+        margin-top: 70px;
+        padding-left: 30px;
+    }
+    .main-text a {
+        padding: 10px 70px;
+        margin-top: -30px;
+    }
+    body {
+        padding-right: 20px;
+        background-repeat: no-repeat;
+        background-image: url('images/bg-mobile.svg') !important;
+        background-position: top center;
+        background-size: contain;
+    }
+    .container {
+        padding-right: 20px;
+    }
+}
+
+/* Media Query :- Css styling screens with a minimum width of 768px and maximum width of 1024px  */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 28px;
+        padding-top: 30px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .logo img {
+        height: 50px;
+        width: 150px;
+        padding-bottom: 5px;
+    }
+    .main-img img {
+        padding: 0;
+        padding-right: 9px;
+        height: 209px;
+        width: 296px;
+    }
+    .main-text h1 {
+        line-height: 30px;
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 284px;
+        padding-top: 5px;
+    }
+    .main-text {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .main-text p {
+        line-height: 22px;
+        width: 307px;
+        font-size: 14.5px;
+        padding-bottom: 10px;
+    }
+    .social-media {
+        text-align: center;
+        margin-top: 70px;
+        padding-left: 30px;
+    }
+    .main-text a {
+        padding: 10px 70px;
+        margin-top: -30px;
+    }
+    body {
+        background-image: url(images/bg-desktop.svg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+    .container {
+        padding-right: 20px;
+    }
+}
+
+ 

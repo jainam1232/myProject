@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https: //fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Jainam panara Base Apparel coming soon page</title>
+	</head>
+	<body>
+		<!-- Logo Container -->
+		<div class="logo-block d-flex-inline">
+			<div class="logo-block__logo">
+				<img src="./images/logo.svg" alt="logo" />
+			</div>
+		</div>
+		<!-- Image Container -->
+		<div class="image-block">
+			<img
+				src="./images/hero-desktop.jpg"
+				class="hero-desktop"
+				alt="hero-desktop"
+			/>
+			<img
+				src="./images/hero-mobile.jpg"
+				class="hero-mobile"
+				alt="hero-mobile"
+			/>
+		</div>
+		<!-- Main Content Container -->
+		<div class="main-content-block">
+			<div class="main-content-block__content">
+				<h1 class="main-content-block__title">
+					<span class="main-content-block__title-text--pink">We're</span
+					><span class="main-content-block__title-text">Coming</span
+					><span class="main-content-block__title-text">Soon</span>
+				</h1>
+				<p class="main-content-block__paragraph">
+					Hello fellow shoppers! We're currently building our new fashion store,
+					Add your email below to stay up-to-date with announcements and our
+					launch deals.
+				</p>
+				<!-- Email Subscription Form -->
+				<form action="#" method="post">
+					<div class="main-content-block__form-group">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							class="main-content-block__input"
+							placeholder="Email Address"
+						/>
+						<img
+							src="./images/icon-error.svg"
+							class="main-content-block__icon-error"
+							alt="icon-error"
+						/>
+						<!-- icon-error -->
+						<button
+							type="button"
+							id="submit"
+							class="main-content-block__submit-button"
+						>
+							<img src="./images/icon-arrow.svg" alt="icon-arrow" />
+						</button>
+					</div>
+					<p class="main-content-block__text-error"></p>
+				</form>
+			</div>
+		</div>
+		<!-- Email Validation JS -->
+		
+		<script src="./validation.js"></script>
+	</body>
+</html>

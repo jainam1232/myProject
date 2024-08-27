@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Intro component with sign up form</title>
+</head>
+
+<body>
+    <!-- Block: container -->
+    <div class="container">
+        <!-- Block: left-container -->
+        <div class="left-container">
+            <!-- Element: heading -->
+            <h1 class="left-container__heading">
+                Learn to code by watching others
+            </h1>
+            <!-- Element: paragraph -->
+            <p class="left-container__paragraph">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <!-- Block: right-container -->
+        <div class="right-container">
+            <!-- Element: heading -->
+            <div class="right-container__heading">
+                <!-- Element: pricing -->
+                <p class="right-container__pricing">
+                    <b>Try it free 7 days</b><span> then $20/mo. thereafter</span>
+                </p>
+            </div>
+            <!-- Block: form -->
+            <form action="#" id="form" class="right-container__form">
+                <!-- Element: input-wrapper -->
+                <div class="right-container__input-wrapper">
+                    <!-- Element: input -->
+                    <input type="text" placeholder="First Name" id="fname" class="right-container__input" required />
+                    <!-- Element: error-message -->
+                    <label for="firstname" class="right-container__error-message">First Name cannot be empty</label
+            >
+          </div>
+          <!-- Element: input-wrapper -->
+          <div class="right-container__input-wrapper">
+            <!-- Element: input -->
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lname"
+              class="right-container__input"
+              required
+            />
+            <!-- Element: error-message -->
+            <label for="lastname" class="right-container__error-message">
+              Last Name cannot be empty</label
+            >
+          </div>
+          <!-- Element: input-wrapper -->
+          <div class="right-container__input-wrapper">
+            <!-- Element: input -->
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              class="right-container__input"
+              required
+            />
+            <!-- Element: error-message -->
+            <label for="email" class="right-container__error-message"
+              >Looks like this is not an email</label
+            >
+          </div>
+          <!-- Element: input-wrapper -->
+          <div class="right-container__input-wrapper">
+            <!-- Element: input -->
+            <input
+              type="password"
+              placeholder="Password"
+              id="pass"
+              class="right-container__input"
+              required
+            />
+            <!-- Element: error-message -->
+            <label for="password" class="right-container__error-message">
+              Password cannot be empty</label
+            >
+          </div>
+          <!-- Element: button -->
+          <button type="submit" class="right-container__button">
+            Claim your free trial
+          </button>
+          <!-- Element: agreement -->
+          <p class="right-container__agreement">
+            By clicking the button, you are agreeing to our<span>
+              Terms and Services
+            </span>
+          </p>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <!-- JavaScript for form validation -->
+    <script src="main.js"></script>
+  </body>
+</html>
